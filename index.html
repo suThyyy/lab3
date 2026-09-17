@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bệnh án ngoại trú Răng Hàm Mặt - MS: BA-18</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="medical-record">
+
+        <header class="header">
+            <div class="container header-container">
+                <div class="header-col header-col-left">
+                    <p>CÔNG TY TNHH MEDLATEC VIỆT NAM</p>
+                    <p class="hospital-sub">BỆNH VIỆN ĐA KHOA MEDLATEC</p>
+                </div>
+                <div class="header-col header-col-center">
+                    <h2>BỆNH ÁN NGOẠI TRÚ<br>RĂNG HÀM MẶT</h2>
+                </div>
+                <div class="header-col header-col-right">
+                    <div class="meta-row meta-row-left">
+                        <span>MS:</span>
+                        <strong>BA-18</strong>
+                    </div>
+                    <div class="meta-row">
+                        <span>Số vào viện:</span>
+                        <input type="text" class="input-line">
+                    </div>
+                    <div class="meta-row">
+                        <span>Mã người bệnh:</span>
+                        <input type="text" class="input-line">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-divider">
+            <hr>
+        </div>
+
+        <main>
+            <section id="general-info" class="form-section">
+                <div class="container">
+                    <h4 class="section-title">A. THÔNG TIN CHUNG</h4>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>1. Họ và tên <em>(In hoa)</em>:</label>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group" style="flex: 2;">
+                            <label>2. Ngày sinh:</label>
+                            <div class="dob-wrapper">
+                                <input type="text" class="input-line input-dob"> /
+                                <input type="text" class="input-line input-dob"> /
+                                <input type="text" class="input-line input-year">
+                            </div>
+                        </div>
+                        <div class="form-group" style="flex: 1.2;">
+                            <label>Tuổi:</label>
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                        <div class="form-group" style="flex: 1.5;">
+                            <label>3. Giới tính:</label>
+                            <span class="checkbox-item"><input type="radio" name="gender"> Nam</span>
+                            <span class="checkbox-item"><input type="radio" name="gender"> Nữ</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>4. Điện thoại:</label>
+                            <input type="text" class="input-line">
+                        </div>
+                        <div class="form-group">
+                            <label>5. Nghề nghiệp:</label>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>6. Dân tộc:</label>
+                            <input type="text" class="input-line">
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>7. Quốc tịch:</label>
+                            <input type="text" class="input-line">
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>8. Địa chỉ: Số nhà</label>
+                            <input type="text" class="input-line input-address-num">
+                            <label class="ml-10">Thôn, phố</label>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="form-row row-with-boxes">
+                        <label>Xã, phường:</label>
+                        <div class="input-with-boxes">
+                            <input type="text" class="input-line">
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row row-with-boxes">
+                        <label>Huyện (Q, Tx):</label>
+                        <div class="input-with-boxes">
+                            <input type="text" class="input-line">
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row row-with-boxes">
+                        <label>Tỉnh, thành phố:</label>
+                        <div class="input-with-boxes">
+                            <input type="text" class="input-line">
+                            <div class="box-group">
+                                <input type="text" class="input-square-box" maxlength="1">
+                                <input type="text" class="input-square-box" maxlength="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>9. Đối tượng:</label>
+                            <span class="checkbox-item"><input type="radio" name="patient_type"> BHYT</span>
+                            <span class="checkbox-item"><input type="radio" name="patient_type"> Thu phí</span>
+                            <span class="checkbox-item"><input type="radio" name="patient_type"> Miễn</span>
+                            <span class="checkbox-item"><input type="radio" name="patient_type"> Khác</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>10. Số thẻ BHYT:</label>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>11. Số Căn cước/Hộ chiếu/Số định danh cá nhân:</label>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group form-group-full">
+                            <label>12. Họ và tên thân nhân của NB khi cần báo tin:</label>
+                            <input type="text" class="input-line">
+                            <label class="ml-10">Điện thoại:</label>
+                            <input type="text" class="input-line input-md">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="exam-info" class="form-section">
+                <div class="container">
+                    <h4 class="section-title">B. THÔNG TIN KHÁM BỆNH</h4>
+
+                    <div class="content-block">
+                        <p class="font-bold">I. LÝ DO VÀO VIỆN, VẤN ĐỀ SỨC KHỎE:</p>
+                        <textarea class="input-textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">II. HỎI BỆNH</p>
+                        <p>1. Quá trình bệnh lý và diễn biến lâm sàng: <em>(Đặc điểm khởi phát, các triệu chứng lâm
+                                sàng, diễn biến bệnh...)</em></p>
+                        <textarea class="input-textarea" rows="4"></textarea>
+
+                        <p class="mt-10">2. Tiền sử có liên quan đến tình trạng bệnh lần này:</p>
+                        <div class="form-row">
+                            <span class="label-fixed">Dị ứng:</span>
+                            <span class="checkbox-item"><input type="radio" name="allergies"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="allergies"> Có, ghi rõ:</span>
+                            <input type="text" class="input-line">
+                        </div>
+                        <div class="form-row">
+                            <span class="label-fixed">Bản thân:</span>
+                            <span class="checkbox-item"><input type="radio" name="personal_history"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="personal_history"> Có, ghi rõ:</span>
+                            <input type="text" class="input-line">
+                        </div>
+                        <div class="form-row">
+                            <span class="label-fixed">Gia đình:</span>
+                            <span class="checkbox-item"><input type="radio" name="family_history"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="family_history"> Có, ghi rõ:</span>
+                            <input type="text" class="input-line">
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">III. KHÁM BỆNH</p>
+
+                        <div class="exam-container">
+                            <div class="exam-left">
+                                <div class="form-row">
+                                    <label class="font-bold">1. Toàn thân:</label>
+                                    <span class="checkbox-item"><input type="radio" name="general_exam"> Bình
+                                        thường</span>
+                                    <span class="checkbox-item"><input type="radio" name="general_exam"> Bất thường, ghi
+                                        rõ:</span>
+                                </div>
+                                <div class="form-row">
+                                    <textarea class="input-textarea" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="exam-right-vitals">
+                                <div class="vital-row"><span>Mạch:</span><input type="text"
+                                        class="input-line"><span>lần/phút</span></div>
+                                <div class="vital-row"><span>Nhiệt độ:</span><input type="text"
+                                        class="input-line"><span>°C</span></div>
+                                <div class="vital-row">
+                                    <span>Huyết áp:</span>
+                                    <div class="bp-inputs"><input type="text" class="input-line">/<input type="text"
+                                            class="input-line"></div>
+                                    <span>mmHg</span>
+                                </div>
+                                <div class="vital-row"><span>Nhịp thở:</span><input type="text"
+                                        class="input-line"><span>lần/phút</span></div>
+                                <div class="vital-row"><span>Cân nặng:</span><input type="text"
+                                        class="input-line"><span>kg</span></div>
+                                <div class="vital-row"><span>Chiều cao:</span><input type="text"
+                                        class="input-line"><span>cm</span></div>
+                                <div class="vital-row"><span>BMI:</span><input type="text"
+                                        class="input-line"><span>kg/m²</span></div>
+                                <div class="vital-row"><span>SpO2:</span><input type="text"
+                                        class="input-line"><span>%</span></div>
+                                <div class="vital-row"><span>VAS:</span><input type="text"
+                                        class="input-line"><span>/10</span></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label class="font-bold">2. Khám chuyên khoa</label>
+                            <label>Ngoài miệng:</label>
+                            <span class="checkbox-item"><input type="radio" name="out_mouth"> Bình thường</span>
+                            <span class="checkbox-item"><input type="radio" name="out_mouth"> Bất thường, ghi rõ:</span>
+                        </div>
+                        <textarea class="input-textarea" rows="4"></textarea>
+
+                        <div class="form-row">
+                            <label>Trong miệng:</label>
+                            <span class="checkbox-item"><input type="radio" name="in_mouth"> Bình thường</span>
+                            <span class="checkbox-item"><input type="radio" name="in_mouth"> Bất thường, ghi rõ:</span>
+                        </div>
+                        <textarea class="input-textarea" rows="4"></textarea>
+
+                        <div class="form-row">
+                            <label class="font-bold">3. Các xét nghiệm, cận lâm sàng cần làm:</label>
+                            <span class="checkbox-item"><input type="radio" name="lab_test"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="lab_test"> Có, ghi rõ:</span>
+                        </div>
+                        <textarea class="input-textarea" rows="2"></textarea>
+
+                        <div class="form-row">
+                            <label class="font-bold">4. Tóm tắt bệnh án:</label>
+                        </div>
+                        <textarea class="input-textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">IV. CHẨN ĐOÁN (Tên bệnh kèm theo mã ICD)</p>
+                        <div class="form-row row-with-boxes">
+                            <label>Bệnh chính:</label>
+                            <div class="input-with-boxes">
+                                <input type="text" class="input-line">
+                                <div class="box-icd">
+                                    <input type="text" class="input-icd-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row row-with-boxes">
+                            <label>Bệnh kèm theo (nếu có):</label>
+                            <div class="input-with-boxes">
+                                <input type="text" class="input-line">
+                                <div class="box-icd">
+                                    <input type="text" class="input-icd-box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row row-with-boxes">
+                            <label>Biến chứng (nếu có):</label>
+                            <div class="input-with-boxes">
+                                <input type="text" class="input-line">
+                                <div class="box-icd">
+                                    <input type="text" class="input-icd-box">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">V. KẾ HOẠCH ĐIỀU TRỊ</p>
+                        <textarea class="input-textarea" rows="3"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">VI. QUÁ TRÌNH ĐIỀU TRỊ</p>
+                        <table class="treatment-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Ngày</th>
+                                    <th style="width: 40%;">Diễn biến bệnh</th>
+                                    <th style="width: 30%;">Xử trí</th>
+                                    <th style="width: 15%;">Ghi chú</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="input-cell"></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><input type="text" class="input-cell"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="input-cell"></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><input type="text" class="input-cell"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="input-cell"></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><input type="text" class="input-cell"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="input-cell"></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><input type="text" class="input-cell"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="input-cell"></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><textarea class="input-textarea-cell" rows="1"></textarea></td>
+                                    <td><input type="text" class="input-cell"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">VII. THỜI GIAN ĐIỀU TRỊ</p>
+                        <div class="treatment-time-row">
+                            Điều trị từ ngày
+                            <input type="text" class="input-line input-date"> /
+                            <input type="text" class="input-line input-date"> /
+                            20<input type="text" class="input-line input-date"> đến ngày
+                            <input type="text" class="input-line input-date"> /
+                            <input type="text" class="input-line input-date"> /
+                            20<input type="text" class="input-line input-date">
+                        </div>
+
+                        <div class="signatures">
+                            <div class="signature-col">
+                                <p>
+                                    Ngày <input type="text" class="input-line input-date">
+                                    tháng <input type="text" class="input-line input-date">
+                                    năm 20<input type="text" class="input-line input-date">
+                                </p>
+                                <p class="font-bold">Bác sỹ điều trị</p>
+                                <div class="signature-space">
+                                    <p class="italic">(Ký, ghi rõ họ tên)</p>
+
+                                </div>
+                            </div>
+                            <div class="signature-col">
+                                <p>
+                                    Ngày <input type="text" class="input-line input-date">
+                                    tháng <input type="text" class="input-line input-date">
+                                    năm 20<input type="text" class="input-line input-date">
+                                </p>
+                                <p class="font-bold">Đại diện cơ sở KB, CB</p>
+                                <div class="signature-space">
+                                    <p class="italic">(Ký, đóng dấu)</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION C: TỔNG KẾT BỆNH ÁN -->
+            <section id="summary-info" class="form-section">
+                <div class="container">
+                    <h4 class="section-title">C. TỔNG KẾT BỆNH ÁN</h4>
+
+                    <div class="content-block">
+                        <p class="font-bold">1. Tóm tắt quá trình bệnh lý và diễn biến lâm sàng <em
+                                style="font-weight: normal;">(Đặc điểm khởi phát, các triệu chứng lâm sàng, diễn biến
+                                bệnh...):</em>
+                        </p>
+                        <textarea class="input-textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">2. Những dấu hiệu lâm sàng chính được ghi nhận <em
+                                style="font-weight: normal;">(có giá
+                                trị chẩn đoán trong quá trình điều trị):</em></p>
+                        <textarea class="input-textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">3. Tóm tắt kết quả xét nghiệm, cận lâm sàng có giá trị chẩn đoán:</p>
+                        <textarea class="input-textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">4. Phương pháp điều trị (tương ứng với chẩn đoán):</p>
+                        <div class="form-row">
+                            <span class="label-fixed">Nội khoa:</span>
+                            <span class="checkbox-item"><input type="radio" name="medical_treatment"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="medical_treatment"> Có, ghi rõ:</span>
+                        </div>
+                        <textarea class="input-textarea" rows="2"></textarea>
+
+                        <div class="form-row mt-10">
+                            <span>Phẫu thuật, thủ thuật:</span>
+                            <span class="checkbox-item"><input type="radio" name="surgery_treatment"> Không</span>
+                            <span class="checkbox-item"><input type="radio" name="surgery_treatment"> Có, ghi rõ phương
+                                pháp:</span>
+                        </div>
+                        <textarea class="input-textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">5. Tình trạng ra viện:</p>
+                        <div class="form-row" style="flex-wrap: wrap; gap: 12px;">
+                            <div class="check-box-grid">
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Khỏi</span>
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Đỡ</span>
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Không thay
+                                    đổi</span>
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Nặng hơn</span>
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Tử vong</span>
+                                <span class="checkbox-item check-box-wide"><input type="radio" name="discharge_status">
+                                    Tiên lượng nặng
+                                    xin
+                                    về</span>
+                                <span class="checkbox-item"><input type="radio" name="discharge_status"> Chưa xác
+                                    định</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+                        <p class="font-bold">6. Hướng điều trị và các chế độ tiếp theo:</p>
+                        <textarea class="input-textarea" rows="3"></textarea>
+
+                        <div class="signatures single-right" style="margin-top: 30px;">
+                            <div class="signature-col" style="margin-left: auto;">
+                                <p>
+                                    Ngày <input type="text" class="input-line input-date">
+                                    tháng <input type="text" class="input-line input-date">
+                                    năm 20<input type="text" class="input-line input-date">
+                                </p>
+                                <p class="font-bold">Bác sỹ điều trị</p>
+                                <div class="signature-space">
+                                    <p class="italic">(Ký, ghi rõ họ tên)</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
