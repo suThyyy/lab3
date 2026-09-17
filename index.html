@@ -189,7 +189,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="exam-info" class="form-section">
                 <div class="container">
                     <h4 class="section-title">B. THÔNG TIN KHÁM BỆNH</h4>
@@ -420,7 +419,6 @@
                     </div>
                 </div>
             </section>
-            <!-- SECTION C: TỔNG KẾT BỆNH ÁN -->
             <section id="summary-info" class="form-section">
                 <div class="container">
                     <h4 class="section-title">C. TỔNG KẾT BỆNH ÁN</h4>
@@ -507,6 +505,19 @@
         </main>
 
     </div>
+
+    <script>
+        const textareas = document.querySelectorAll("textarea.input-textarea, textarea.input-textarea-cell");
+
+        function resizeTextarea(textarea) {
+            textarea.style.height = "auto";
+            textarea.style.height = `${textarea.scrollHeight}px`;
+        }
+
+        textareas.forEach((textarea) => {
+            textarea.addEventListener("input", () => resizeTextarea(textarea));
+        });
+    </script>
 
 </body>
 

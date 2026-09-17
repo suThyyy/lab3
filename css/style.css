@@ -161,16 +161,18 @@ input[type="radio"]:checked::after {
   font-size: 14.5px;
   color: inherit;
   outline: none;
-  resize: none;
-  overflow: hidden;
+  resize: vertical;
+  overflow-y: auto;
   line-height: 28px;
   padding: 0 4px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='28'><circle cx='3' cy='27' r='1' fill='%23000'/></svg>");
-  background-repeat: repeat;
 }
 
 .input-textarea:focus {
   background-color: rgba(0, 123, 255, 0.03);
+}
+
+.content-block > .input-textarea {
+  margin-top: 6px;
 }
 
 .form-section {
@@ -386,6 +388,28 @@ input[type="radio"]:checked::after {
 .treatment-table .input-cell:focus,
 .treatment-table .input-textarea-cell:focus {
   background-color: rgba(0, 123, 255, 0.03);
+}
+
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .medical-record {
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .input-textarea,
+  .treatment-table .input-textarea-cell {
+    overflow: visible;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='28'><circle cx='3' cy='27' r='1' fill='%23000'/></svg>");
+    background-repeat: repeat;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
 
 .treatment-time-row {
